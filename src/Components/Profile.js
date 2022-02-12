@@ -6,11 +6,11 @@ constructor(props){
 }
 
 render(){
-    const {name,age,gender,setParentState,city,country}=this.props
+    const {name,age,male,setParentState,city,country}=this.props
 var allData=[
 {title:'Name', value:name},
 {title:'Age', value:age},
-{title:'Gender', value:gender},
+{title:'Gender', value:male?'Male':'Female'},
 {title:'City', value:city},
 {title:'Country', value:country}
 ]

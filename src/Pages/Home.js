@@ -7,14 +7,14 @@ class Home extends Component {
     this.state = {
       name: "",
       age: "",
-      gender: "",
+      male: false,
       city: "",
       country: "",
       submitted: false,
     };
   }
   render() {
-    const { name, age, gender, city, country, submitted } = this.state;
+    const { name, age, male, city, country, submitted } = this.state;
     // console.log(<Form/>,"hi")
     return (
       <div>
@@ -22,7 +22,7 @@ class Home extends Component {
           <Profile
             name={name}
             age={age}
-            gender={gender}
+            male={male}
             city={city}
             country={country}
             setParentState={(d) => this.setState(d)}
@@ -33,7 +33,7 @@ class Home extends Component {
             submitted={submitted}
             name={name}
             age={age}
-            gender={gender}
+            male={male}
             city={city}
             country={country}
           />
